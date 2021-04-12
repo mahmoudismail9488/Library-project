@@ -6,13 +6,14 @@
 }
 body{
     background-color: #EFF2F1;
+    position: relative;
 }
 .index-page{
     width: 375px;
     height: 667px;
     text-align: center;
     margin: 0 auto;
-    position: relative;
+
 }
 /* nav section style ........................ */
 .nav{
@@ -52,9 +53,10 @@ body{
     text-decoration: none;
     color: black;
 }
+#appear-about{
+    cursor: pointer;
+}
 /*nav style end*/
-
-
 /* about style start */
 .about{
     top: 0;
@@ -82,8 +84,8 @@ body{
     font-size: 20px;
     margin-top: 15px;
     margin-bottom: 20px;
-    font-style: italic;
-
+    /* font-style: italic; */
+    
 }
 #sec-p{
     color:#89C6FF ;
@@ -110,6 +112,7 @@ body{
 /* about section end */
 
 
+
 .quote_generator{
     width: auto;
     max-width: 900px;
@@ -130,6 +133,8 @@ body{
     width: 100%;
     font-size: 12px;
     margin-top: 20px;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-header{
