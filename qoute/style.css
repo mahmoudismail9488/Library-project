@@ -111,18 +111,47 @@ body{
 }
 /* about section end */
 
+.quote_titel{
+    margin-top: 30px;
+}
+.p_titel{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
 
 
 .quote_generator{
     width: auto;
-    max-width: 900px;
+    height: 150px;
     padding: 20px 30px;
-    border-radius: 10px;
-    background-color: rgba(78, 72, 72, 0.13);
+    background-color: #cce3f6;
     box-shadow: 0 10px 10px 10px rgba(250, 250, 250, 0.363);
 
 }
+.button_container{
+    margin-top: 100px;
 
+}
+button{
+    font-size: 15px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    color:#fff;
+    background: #89c6ff;
+    outline: none;
+    padding: 0.3rem 1.85em;;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover{
+    filter: brightness(110%);
+}
+
+button:active{
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
 
 
 /* footer style start ---------------------------------*/
