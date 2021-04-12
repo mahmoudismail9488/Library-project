@@ -6,6 +6,7 @@
 }
 body{
     background-color: #EFF2F1;
+    position: relative;
 }
 .index-page{
     width: 375px;
@@ -118,6 +119,8 @@ body{
     width: 100%;
     font-size: 12px;
     margin-top: 20px;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-header{
