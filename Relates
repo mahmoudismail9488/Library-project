@@ -1,0 +1,6 @@
+
+[main 2021-04-12T15:11:26.548Z] update#setState idle
+(node:9696) electron: The default of contextIsolation is deprecated and will be changing from false to true in a future release of Electron.  See https://github.com/electron/electron/issues/23506 for more information
+(node:9696) electron: The default of contextIsolation is deprecated and will be changing from false to true in a future release of Electron.  See https://github.com/electron/electron/issues/23506 for more information
+[main 2021-04-12T15:11:56.554Z] update#setState checking for updates
+[main 2021-04-12T15:11:59.628Z] update#setState idle
