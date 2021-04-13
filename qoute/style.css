@@ -118,7 +118,28 @@ body{
     margin-top: 20px;
     margin-bottom: 50px;
 }
-
+.quote{
+font-family: Playfair Display;
+font-style: italic;
+font-weight: normal;
+font-size: 16.8138px;
+line-height: 22px;
+align-items: center;
+text-align: center;
+}
+.author{
+font-family: Playfair Display;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+align-items: center;
+text-align: center;
+}
+.quote_text{
+display: flex;
+flex-direction: row;
+margin-bottom: 10px;
+}
 
 .quote_generator{
     width: auto;
@@ -129,7 +150,7 @@ body{
 
 }
 .button_container{
-    margin-top: 100px;
+    margin-top: 30px;
 
 }
 button{

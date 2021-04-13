@@ -11,3 +11,4 @@ window.onclick = function(event) {
         hiddenSection.style.display = "none";
     }
   }
+
