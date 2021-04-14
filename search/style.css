@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Playfair Display', serif;
-
 }
-
 
 
 .searchpage{
@@ -12,16 +10,12 @@
     height: 667px;
     text-align: center;
     margin: 0 auto;
-    position: relative;
-
 }
 
 
 body{
     background-color: #EFF2F1;
-    position: relative;
 }
-
 
 
 /* nav section style */
@@ -68,100 +62,74 @@ body{
 /*nav style end*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Title search */
-
-
 .title{
-
-
-
-position: absolute;
-width: 95px;
-height: 40px;
-left: 141px;
-top: 99px;
-
+width: 100%;
+height: 60px;
 font-family: Playfair Display;
 font-style: normal;
 font-weight: bold;
 font-size: 30px;
 line-height: 40px;
-/* identical to box height */
-
 text-align: center;
 color: #000000;
-
+margin-top: 50px;
 }
 
 
 /* paraghraph */
 .description{
-position: absolute;
-width: 328px;
-height: 60px;
-left: 27px;
-top: 170px;
-
+width: 70%;
+height: 70px;
 font-family: Playfair Display;
 font-style: normal;
 font-weight: normal;
 font-size: 15px;
 line-height: 20px;
 text-align: center;
-
 color: #403E3E;
+margin-left: 15%;
 }
-
 
 /* input */
 .search{
-    position: absolute;
-    width: 266.98px;
-    height: 39.22px;
-    left: 54.31px;
-    top: 282px;
-    
+    width: 100%;
+    height:40px;
     background: #89C6FF;
     border-radius: 15px;
     transform: matrix(1, 0.01, -0.01, 1, 0, 0);
     border: none;
     outline: none;
+    margin-top: 20px;
 }
 
+.search::placeholder{
+    color: #fff;
+}
 
+.searchbox{
+    width: 70%;
+    height: 40px;
+    position: relative;
+    margin-left: 15%;
+    
+}
 
 /* icon search */
-
 .iconify{
 position: absolute;
 width: 29px;
 height: 28px;
-left: 288px;
-top: 290px;
+right: 3px;
+top: 12px;
 background: #89C6FF;
+color:#fff;
+margin-top: 15px;
 }
 
 
-
 /* img */
-
 .photo{
-position: absolute;
 width: 200px;
 height: 149px;
 left: 84px;
@@ -169,11 +137,7 @@ top: 369px;
 }
 
 
-
-
-
-
-/* footer style start ---------------------------------*/
+/* footer style start */
 .footer{
     color: #fff;
     background-color: #281F1F;
@@ -182,7 +146,7 @@ top: 369px;
     font-size: 12px;
     margin-top: 20px;
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
 }
 
 .footer-header{
@@ -218,7 +182,6 @@ top: 369px;
 
 
 
-
 /* media quary */
 @media screen and (min-width:376px) {
     /* index*/
@@ -243,6 +206,16 @@ top: 369px;
     .footer{
         height: 150;
     }
+
+    .searchbox{
+        width: 55%;
+        margin: 0 auto;
+    }
+    .photo{
+        width: 40%;
+        height: 200px;
+    }
+    
 }
 
 @media screen and (min-width:1000px){
@@ -257,5 +230,25 @@ top: 369px;
     }
     .logo{
         font-size: 1.8vw;
+    }
+    .title{
+        font-size: 40px;
+    }
+
+    .description{
+        font-size:20px;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 20px;
+    }
+    .searchbox{
+        width: 40%;
+    }
+    .photo{
+        height: 250px;
+        width: auto;
+    }
+    .footer{
+        position: relative;
     }
 } 
