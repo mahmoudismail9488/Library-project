@@ -12,3 +12,8 @@ window.onclick = function(event) {
     }
   }
 
+  const quoteText = document.querySelector('.quote')
+  const authorText = document.querySelector('.author');
+  const newQuoteBtn = document.getElementById('new_quote');
+  
+  
