@@ -7,7 +7,6 @@
 
 .searchpage{
     width: 375px;
-    height: 667px;
     text-align: center;
     margin: 0 auto;
 }
@@ -141,18 +140,19 @@ top: 369px;
 .footer{
     color: #fff;
     background-color: #281F1F;
-    height: 125px;
+    height: 26vh;
     width: 100%;
     font-size: 12px;
     margin-top: 20px;
-    position: absolute;
-    bottom: 1px;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
 
 .footer-header{
     color: #89C6FF;
     font-size: 18px;
-    padding-top: 20px;
 }
 
 .footer-icons{
