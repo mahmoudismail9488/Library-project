@@ -1,5 +1,5 @@
 // Listing images by Api 
-const conta = document.querySelector('div');
+const mainContainer = document.querySelector('figure');
 window.onload = load();
 
 
@@ -16,26 +16,26 @@ fetch('https://www.googleapis.com/books/v1/volumes?q=fantastic&maxResults=30')
 
 .then((data) =>  {
     for(let i = 0; i<data.items.length;i++) {
-    const sec =  document.createElement('section');
-    const im = document.createElement('img');
-    const p = document.createElement('p')
-    const p2 = document.createElement('p')
+    const div =  document.createElement('div');
+    const image = document.createElement('img');
+    const title = document.createElement('figcaption')
+    const auther = document.createElement('figcaption')
 
 
 
-    sec.setAttribute('class','cont')
+    div.setAttribute('class','sub-container')
 
-    conta.appendChild(sec);
-    sec.appendChild(im);
-    sec.appendChild(p);
-    sec.appendChild(p2);
+    mainContainer.appendChild(div);
+    div.appendChild(image);
+    div.appendChild(title);
+    div.appendChild(auther);
 
 
-        im.src = data.items[i].volumeInfo.imageLinks.thumbnail;
-        p.innerHTML = `Title : ${data.items[i].volumeInfo.title}`;
-        p2.innerHTML = ` Auther : ${data.items[i].volumeInfo.publisher}`;
-        console.log(p.textContent)
-        console.log(p2.textContent)
+        image.src = data.items[i].volumeInfo.imageLinks.thumbnail;
+        title.innerHTML = `Title : ${data.items[i].volumeInfo.title}`;
+        auther.innerHTML = ` Auther : ${data.items[i].volumeInfo.publisher}`;
+        console.log(title.textContent)
+        console.log(auther.textContent)
 
 
 
