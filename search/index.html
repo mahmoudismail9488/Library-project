@@ -10,8 +10,6 @@
     <title>Document</title>
     <link rel = "icon" href ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Books_Flat_Icon_Vector.svg/691px-Books_Flat_Icon_Vector.svg.png" type = "image/x-icon">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
-
 </head>
 
 
@@ -24,12 +22,26 @@
     <nav class="nav">
         <h3 class="logo">OurLibrary</h3>
         <ul>
-            <a href="/index.html"><li>Home</li></a>
+            <a href="../index.html"><li>Home</li></a>
             <li id="appear-about">About</li>
         </ul>
     </nav>
 </header>
 <!-- header section end -->
+
+<!-- about section -->
+<section id="about" class="about">
+  <button id="closeBtn">&times;</button>
+  <article class="about-content">
+  <h3>THE IMPORTANCE OF READING IN OUR LIFE</h3>
+  <p>Reading is important for many reasons. Firstly, it develops our thoughts. Secondly, it gives us endless knowledge and lessons. Thirdly, it keeps our minds active. Finally, books can hold and keep all kinds of information, stories, thoughts and feelings unlike anything else.
+  </p><br>
+  <p id="sec-p">So we have built this website to give you the opportunity to discover an intersting world.</p>
+  </article>
+</section>
+<!-- about section end -->
+
+
 
     <!-- Title search -->
     <header>
@@ -50,15 +62,30 @@
     <!-- icon search -->
 
    <section class="searchbox">
-   <input type="search" class="search" name="search" placeholder="Your Book ...">
-   <span class="iconify" data-icon="ei:search" data-inline="false"></span>
+   <input type="search" id="search" name="search" placeholder="Your Book ...">
+   <span id="sub-btn">
+    <i class="fas fa-search"></i>
+   </span>
    </section>
+   
+
+   <!-- API sherch -->
+
+   <div class="container">
+ 
+    <a href="url"></a> 
+    <img src="" alt="">
+    <h4></h4>
+    <p></p>
+
+     </div>
+
 
    <!-- img -->
    <br>
    <br>
    <figure>
-      <img class="photo" src="https://raw.githubusercontent.com/GSG-FC02/Library-project/main/images/search%201.png" alt="book">
+      <img id="photo" src="https://raw.githubusercontent.com/GSG-FC02/Library-project/main/images/search%201.png" alt="book">
   </figure>
 
   <!-- footer section start -->
@@ -73,5 +100,10 @@
 </footer>
 <!-- footer section end -->
 
-</main>
+ 
+
+  </main>
+
+    <script src="main.js"></script>
+
   </body>
