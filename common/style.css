@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+
+}
+body{
+    background-color: #EFF2F1;
+    position: relative;
+}
+.index-page{
+    width: 375px;
+    height: 667px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+/* nav section style ........................ */
+.nav{
+    display: flex;
+    height: 60px;
+}
+
+.logo{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 60%;
+    text-align: left;
+    color: #89C6FF;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: right; 
+    width: 40%;
+}
+
+.nav li{
+    width: 25%;
+    margin-left: 20px;
+    color: #403E3E;
+}
+
+.nav li::first-letter{
+    color: #89C6FF;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+#appear-about{
+    cursor: pointer;
+}
+/*nav style end*/
+/* about style start */
+.about{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #281f1fb0;
+    text-align: center;
+    padding-top:120px;
+}
+.about-content{
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #EFF2F1;
+    font-size: 13px;
+    padding: 15px;
+    overflow: auto;
+}
+
+.about-content h3{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-style: italic;
+    
+}
+#sec-p{
+    color:#89C6FF ;
+    font-weight: bold;
+}
+#closeBtn{
+    width: 25px;
+    font-size: 40px;
+    font-weight: 900;
+    border: none;
+    color: red;
+    background-color: #281f1f00;
+    outline: none;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+}
+
+#closeBtn:hover{
+    width: 40px;
+    background-color:red ;
+    color:#EFF2F1 ;
+}
+/* about section end */
+
+/* footer style start ---------------------------------*/
+.footer{
+    color: #fff;
+    background-color: #281F1F;
+    height: 125px;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-header{
+    color: #89C6FF;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.footer-icons{
+    width: 70%;
+    height: 45px;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 27px;
+    color: #fff;
+}
+.icons {
+    width: 50px;
+    height: 50px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer p>a{
+    color: #89C6FF; 
+    cursor: pointer;
+}
+/* footer style end*/
+
+
+/* media quary */
+@media screen and (min-width:376px) {
+    /* index*/
+    .index-page{
+        width: 100%;
+    }
+    /*nav*/
+    .nav{
+        width: 100%;
+    }
+
+    .nav ul{
+        width: 30%;
+        margin-left: 40%;
+        font-size: 2.5vw;
+    }
+
+    .logo{
+        font-size: 3vw;
+    }
+    /* footer */
+    .footer{
+        height: 150;
+    }
+}
+
+@media screen and (min-width:1000px){
+    /* nav */
+    .nav ul{
+        font-size: 1.4vw;
+        margin-left: 50%;
+    }
+    .nav li{
+        width: 25%;
+        margin: 0 auto;
+    }
+    .logo{
+        font-size: 1.8vw;
+    }
+    /* about */
+    .about-content{
+        font-size: 15px;
+    }
+    
+}
