@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <link rel = "icon" href ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Books_Flat_Icon_Vector.svg/691px-Books_Flat_Icon_Vector.svg.png" type = "image/x-icon">
+    
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 
@@ -50,15 +51,26 @@
     <!-- icon search -->
 
    <section class="searchbox">
-   <input type="search" class="search" name="search" placeholder="Your Book ...">
-   <span class="iconify" data-icon="ei:search" data-inline="false"></span>
+   <input type="search" id="search" name="search" placeholder="Your Book ...">
+   <!-- <span id="sub-btn" data-icon="ei:search" data-inline="false"></span> -->
+   <span id="sub-btn">
+    <i class="fas fa-search"></i>
+   </span>
    </section>
+   
+
+   <!-- API sherch -->
+
+   <div class="container">
+
+     </div>
+
 
    <!-- img -->
    <br>
    <br>
    <figure>
-      <img class="photo" src="https://raw.githubusercontent.com/GSG-FC02/Library-project/main/images/search%201.png" alt="book">
+      <img id="photo" src="https://raw.githubusercontent.com/GSG-FC02/Library-project/main/images/search%201.png" alt="book">
   </figure>
 
   <!-- footer section start -->
@@ -73,5 +85,10 @@
 </footer>
 <!-- footer section end -->
 
-</main>
+ 
+
+  </main>
+
+    <script src="main.js"></script>
+
   </body>
