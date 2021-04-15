@@ -142,22 +142,22 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-.cont {
+.sub-container {
   width: 250px;
   height: 450px;
   background-color: white;
   margin: 20px;
   margin-top: 20px;
 }
-.cont img {
+.sub-container img {
   width: 100%;
   height: 330px;
   border: none;
 }
-.cont img:hover {
+.sub-container img:hover {
   transform: scale(1.1);
 }
-.cont p {
+.sub-container figcaption {
   width: 100%;
   height: 30px;
   overflow: hidden;
