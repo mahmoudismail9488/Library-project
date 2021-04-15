@@ -21,8 +21,8 @@ window.onclick = function(event) {
     fetch("https://api.quotable.io/random")
     .then((Response)=>Response.json())
     .then(data =>{
-        quoteText.innerHTML = data.content;
-        authorText.innerHTML= data.author;
+        quoteText.textContent = data.content;
+        authorText.textContent= data.author;
     })
     .catch(error => { console.log('Something went wrong', error);
     });
