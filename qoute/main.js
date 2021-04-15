@@ -12,3 +12,19 @@ window.onclick = function(event) {
     }
   }
 
+  const quoteText = document.querySelector('.quote')
+  const authorText = document.querySelector('.author');
+  const newQuoteBtn = document.getElementById('new_quote');
+  
+  newQuoteBtn.addEventListener("click", getQuote)
+  function getQuote(){
+    fetch("https://api.quotable.io/random")
+    .then((Response)=>Response.json())
+    .then(data =>{
+        quoteText.textContent = data.content;
+        authorText.textContent= data.author;
+    })
+    .catch(error => { console.log('Something went wrong', error);
+    });
+
+  }
